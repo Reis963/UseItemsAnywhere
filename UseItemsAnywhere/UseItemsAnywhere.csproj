@@ -9,106 +9,98 @@
 	  <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
-	<PropertyGroup>
-		<TarkovDir Condition=" '$(TarkovDir)' == '' ">$(SolutionDir)..\..\</TarkovDir>
-		<TarkovPluginsSPTDir>$(TarkovDir)BepInEx\plugins\spt\</TarkovPluginsSPTDir>
-		<TarkovManagedDir>$(TarkovDir)EscapeFromTarkov_Data\Managed\</TarkovManagedDir>
-		<TarkovBepInExCoreDir>$(TarkovDir)BepInEx\core\</TarkovBepInExCoreDir>
-		<TarkovDumpedAssemblyDir>$(TarkovDir)BepInEx\DumpedAssemblies\EscapeFromTarkov\</TarkovDumpedAssemblyDir>
-	</PropertyGroup>
-
 	<ItemGroup>
 		<!-- Tarkov/Unity -->
 		<Reference Include="Assembly-CSharp">
-			<HintPath>$(TarkovManagedDir)Assembly-CSharp.dll</HintPath>
+			<HintPath>References\Tarkov\Assembly-CSharp.dll</HintPath>
 		</Reference>
 		<Reference Include="ItemComponents.Types">
-			<HintPath>$(TarkovManagedDir)ItemComponent.Types.dll</HintPath>
+			<HintPath>References\Tarkov\ItemComponent.Types.dll</HintPath>
 		</Reference>
 		<Reference Include="Comfort">
-			<HintPath>$(TarkovManagedDir)Comfort.dll</HintPath>
+			<HintPath>References\Tarkov\Comfort.dll</HintPath>
 		</Reference>
 		<Reference Include="Comfort.Unity">
-			<HintPath>$(TarkovManagedDir)Comfort.Unity.dll</HintPath>
+			<HintPath>References\Tarkov\Comfort.Unity.dll</HintPath>
 		</Reference>
 		<Reference Include="DissonanceVoip">
-			<HintPath>$(TarkovManagedDir)DissonanceVoip.dll</HintPath>
+			<HintPath>References\Tarkov\DissonanceVoip.dll</HintPath>
 		</Reference>
 		<Reference Include="DOTween">
-			<HintPath>$(TarkovManagedDir)DOTween.dll</HintPath>
+			<HintPath>References\Tarkov\DOTween.dll</HintPath>
 		</Reference>
 		<Reference Include="DOTween.Modules">
-			<HintPath>$(TarkovManagedDir)DOTween.Modules.dll</HintPath>
+			<HintPath>References\Tarkov\DOTween.Modules.dll</HintPath>
 		</Reference>
 		<Reference Include="Newtonsoft.Json">
-			<HintPath>$(TarkovManagedDir)Newtonsoft.Json.dll</HintPath>
+			<HintPath>References\Tarkov\Newtonsoft.Json.dll</HintPath>
 		</Reference>
 		<Reference Include="Sirenix.Serialization">
-			<HintPath>$(TarkovManagedDir)Sirenix.Serialization.dll</HintPath>
+			<HintPath>References\Tarkov\Sirenix.Serialization.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.TextMeshPro">
-			<HintPath>$(TarkovManagedDir)Unity.TextMeshPro.dll</HintPath>
+			<HintPath>References\Tarkov\Unity.TextMeshPro.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine">
-			<HintPath>$(TarkovManagedDir)UnityEngine.dll</HintPath>
+			<HintPath>References\Tarkov\UnityEngine.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.CoreModule">
-			<HintPath>$(TarkovManagedDir)UnityEngine.CoreModule.dll</HintPath>
+			<HintPath>References\Tarkov\UnityEngine.CoreModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.PhysicModule">
-			<HintPath>$(TarkovManagedDir)UnityEngine.PhysicsModule.dll</HintPath>
+			<HintPath>References\Tarkov\UnityEngine.PhysicsModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.ImageConversionModule">
-			<HintPath>$(TarkovManagedDir)UnityEngine.ImageConversionModule.dll</HintPath>
+			<HintPath>References\Tarkov\UnityEngine.ImageConversionModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.InputLegacyModule">
-			<HintPath>$(TarkovManagedDir)UnityEngine.InputLegacyModule.dll</HintPath>
+			<HintPath>References\Tarkov\UnityEngine.InputLegacyModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.IMGUIModule">
-			<HintPath>$(TarkovManagedDir)UnityEngine.IMGUIModule.dll</HintPath>
+			<HintPath>References\Tarkov\UnityEngine.IMGUIModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.TextRenderingModule">
-			<HintPath>$(TarkovManagedDir)UnityEngine.TextRenderingModule.dll</HintPath>
+			<HintPath>References\Tarkov\UnityEngine.TextRenderingModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.UI">
-			<HintPath>$(TarkovManagedDir)UnityEngine.UI.dll</HintPath>
+			<HintPath>References\Tarkov\UnityEngine.UI.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.UIModule">
-			<HintPath>$(TarkovManagedDir)UnityEngine.UIModule.dll</HintPath>
+			<HintPath>References\Tarkov\UnityEngine.UIModule.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.AIModule">
-			<HintPath>$(TarkovManagedDir)UnityEngine.AIModule.dll</HintPath>
+			<HintPath>References\Tarkov\UnityEngine.AIModule.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.Postprocessing.Runtimee">
-			<HintPath>$(TarkovManagedDir)Unity.Postprocessing.Runtime.dll</HintPath>
+			<HintPath>References\Tarkov\Unity.Postprocessing.Runtime.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.ParticleSystemModule">
-			<HintPath>$(TarkovManagedDir)UnityEngine.ParticleSystemModule.dll</HintPath>
+			<HintPath>References\Tarkov\UnityEngine.ParticleSystemModule.dll</HintPath>
 		</Reference>
 		<Reference Include="DissonanceVoip">
-			<HintPath>$(TarkovManagedDir)DissonanceVoip.dll</HintPath>
+			<HintPath>References\Tarkov\DissonanceVoip.dll</HintPath>
 		</Reference>
 		<Reference Include="bsg.console.core">
-			<HintPath>$(TarkovManagedDir)bsg.console.core.dll</HintPath>
+			<HintPath>References\Tarkov\bsg.console.core.dll</HintPath>
 		</Reference>
 
 		<!-- Harmony/Bepinex -->
 		<Reference Include="0Harmony">
-			<HintPath>$(TarkovBepInExCoreDir)0Harmony.dll</HintPath>
+			<HintPath>References\Bepinex\0Harmony.dll</HintPath>
 		</Reference>
 		<Reference Include="BepinEx">
-			<HintPath>$(TarkovBepInExCoreDir)BepInEx.dll</HintPath>
+			<HintPath>References\Bepinex\BepInEx.dll</HintPath>
 		</Reference>
 		<Reference Include="BepinEx.Preloader">
-			<HintPath>$(TarkovBepInExCoreDir)BepInEx.Preloader.dll</HintPath>
+			<HintPath>References\Bepinex\BepInEx.Preloader.dll</HintPath>
 		</Reference>
 
 		<!-- SPT -->
 		<Reference Include="spt-reflection">
-			<HintPath>$(TarkovPluginsSPTDir)spt-reflection.dll</HintPath>
+			<HintPath>References\SPT\spt-reflection.dll</HintPath>
 		</Reference>
 		<Reference Include="spt-custom">
-			<HintPath>$(TarkovPluginsSPTDir)spt-custom.dll</HintPath>
+			<HintPath>References\SPT\spt-custom.dll</HintPath>
 		</Reference>
 		
 	</ItemGroup>
@@ -128,12 +120,6 @@
 		<ItemGroup>
 			<OutputDLL Include="$(ProjectDir)$(OutDir)$(TargetName).dll" />
 		</ItemGroup>
-
-		<!-- Copies the output and resources to tarkov game folder -->
-		<Copy
-				SourceFiles="@(OutputDLL);"
-				DestinationFolder="$(TarkovDir)BepInEx\plugins\%(RecursiveDir)"
-		/>
 
 		<!-- Creates a release zip file -->
 		<RemoveDir Directories="$(ProjectDir)release" />
